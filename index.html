@@ -1,0 +1,490 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/styles.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+
+
+
+
+    <!-- SITE TITLE -->
+    <title>Upoznaj nove prijatelje na N-TELE farmi</title>
+
+</head>
+<style>
+    @font-face {
+        font-family: 'ariston-comic';
+        src: url('./public/fonts/Ariston-Comic-Font.woff') format('woff'), url('./public/fonts/Ariston-Comic-Font.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'pink_chickenregular';
+        src: url('./public/fonts/pinkchicken-regular.woff2') format('woff2'), url('./public/fonts/pinkchicken-regular.woff') format('woff');
+    }
+    
+    @font-face {
+        font-family: 'gardenia';
+        src: url('./public/fonts/gardenia-extrabolditalic-webfont.woff2') format('woff2'), url('./public/fonts/gardenia-extrabolditalic-webfont.woff') format('woff');
+    }
+</style>
+
+<body>
+    <div id="page">
+        <!-- HEADER -->
+        <nav class="bg-transparent px-6 lg:px-36 py-0 lg:py-4 fixed w-screen z-10 inset-x-0 top-0 flex justify-between items-center">
+
+            <a href="https://ntl.hr/" target="_blank">
+                <div class="flex justify-between items-center">
+                    <svg width="51" height="42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.68 21.31 30.96 4.74M4.68 21.31h41.7M4.68 21.31l24.47 15.82" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    <p class="hidden lg:inline lg:text-white lg:text-lg lg:pl-2 lg:font-pink">NATRAG NA NTL.hr</p>
+                </div>
+            </a>
+
+            <button id="mobileMenuButton" class="p-3 focus:outline-none" title="Open side menu">
+                <svg id="mobileMenuButtonClose" class="w-20 h-16 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                <svg id="mobileMenuButtonOpen" class="w-20 h-16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <div id="sideMenuHideOnMobile" class="bg-red-shadow opacity-90 z-100 flex absolute top-0 right-0 transition-all duration-500 transform translate-x-0
+                                                  w-full
+                                                  px-10 
+                                                  py-8
+                                                  flex-col 
+                                                  -translate-y-full">
+                <p class="uppercase mx-0 sm:mx-2 text-base md:text-2xl transition-all duration-500 py-2 sm:p-0 text-white text-right font-ariston">upoznaj gradsku ekipu</p>
+                <a href="#fifi" class="navlink uppercase mx-0 sm:mx-2 text-base md:text-2xl transition-all duration-500 py-2 sm:p-0 text-white text-right">
+                    <div class="flex justify-end items-center"><svg width="52" height="42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M47 21.18 20.72 4.61M47 21.18H5.3M47 21.18 22.53 37" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                        <p class="pl-4 font-ariston">fifi</p>
+                    </div>
+                </a>
+                <a href="#miki" class="navlink uppercase mx-0 sm:mx-2 text-base md:text-2xl transition-all duration-500 py-2 sm:p-0 text-white  text-right">
+                    <div class="flex justify-end items-center"><svg width="52" height="42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M47 21.18 20.72 4.61M47 21.18H5.3M47 21.18 22.53 37" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                        <p class="pl-4 font-ariston">miki</p>
+                    </div>
+                </a>
+                <a href="#gricko" class="navlink uppercase mx-0 sm:mx-2  text-base md:text-2xl transition-all duration-500 py-2 sm:p-0 text-white text-right">
+                    <div class="flex justify-end items-center"><svg width="52" height="42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M47 21.18 20.72 4.61M47 21.18H5.3M47 21.18 22.53 37" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                        <p class="pl-4 font-ariston">gricko</p>
+                    </div>
+                </a>
+                <a href="#bani" class="navlink uppercase mx-0 sm:mx-2  text-base md:text-2xl transition-all duration-500 py-2 sm:p-0 text-white text-right">
+                    <div class="flex justify-end items-center"><svg width="52" height="42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M47 21.18 20.72 4.61M47 21.18H5.3M47 21.18 22.53 37" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                        <p class="pl-4 font-ariston">bani</p>
+                    </div>
+                </a>
+                <a href="#oli" class="navlink uppercase mx-0 sm:mx-2  text-base md:text-2xl transition-all duration-500 py-2 sm:p-0 text-white text-right">
+                    <div class="flex justify-end items-center"><svg width="52" height="42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M47 21.18 20.72 4.61M47 21.18H5.3M47 21.18 22.53 37" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                        <p class="pl-4 font-ariston">oli</p>
+                    </div>
+                </a>
+                <a href="#igre" class="font-ariston navlink uppercase mx-0 sm:mx-2 text-base md:text-2xl transition-all duration-500 py-2 sm:p-0 text-white text-right">pokreni ili preuzmi igru</a>
+                <a href="#kako-do" class="font-ariston navlink uppercase mx-0 sm:mx-2 text-base md:text-2xl transition-all duration-500 py-2 sm:p-0 text-white text-right">kako do plišanaca</a>
+
+            </div>
+
+        </nav>
+        <section class="bg-red lg:h-screen lg:bg-contain xl:bg-cover lg:bg-no-repeat lg:bg-[url('./images/hero.png')] pt-20">
+            <img src="./src/images/hero-sm.png" class="lg:hidden -mt-20" />
+        </section>
+        <section class="bg-red bg-cover bg-no-repeat lg:bg-no-repeat lg:bg-cover px-8 lg:px-20 2xl:px-32" style="background-image: url('./src/images/bg-line.png');">
+            <div class="flex flex-col justify-around items-center lg:py-20">
+                <h1 class="uppercase text-white text-lg leading-8 text-center lg:text-2xl py-8 px-10 font-ariston lg:px-32" data-aos="fade-down" data-aos-duration="500">upoznaj gradske prijatelje na n-tele farmi</h1>
+                <a href="#video">
+                    <button class="border border-gray-light shadow-lg shadow-dark-shadow rounded-full bg-white text-center text-base uppercase py-4 px-12 pr-8 font-pink">pogledaj video</button>
+                </a>
+            </div>
+            <div id="igre" class="lg:pb-20">
+                <h1 class="uppercase text-white leading-8 text-center text-lg lg:text-2xl pt-24 px-10 font-ariston" data-aos="fade-down" data-aos-duration="500">zaigraj zanimljive igre s našim junacima</h1>
+                <div class="flex flex-col justify-around items-center md:flex-row md:justify-around md:items-center xl:px-16">
+                    <img data-aos="fade-left" data-aos-duration="500" src="./src/images/mobile.png" class="lg:w-2/3" />
+                    <div data-aos="fade-right" data-aos-duration="500" class="flex flex-col justify-between items-center lg:pr-5">
+                        <a href="https://ntl.hr/ntele/game" target="_blank" class="hidden lg:block">
+                            <button>
+                                <img src="./src/images/Asset 31.png" class="w-2/3 lg:w-full mx-auto" />
+                               </button>
+                        </a>
+                        <p class="text-base leading-8 text-white text-center uppercase font-pink lg:hidden">preuzmi N-TELE aplikaciju i igraj na mobitelu</p>
+                        <p class="text-base leading-8 text-white text-center uppercase font-pink hidden lg:block">...ili preuzmi N-TELE aplikaciju i igraj na mobitelu</p>
+                        <a href="https://apps.apple.com/us/app/n-tele-2/id1641306871" target="_blank"><img src="./src/images/appstore.svg" class="w-1/2 lg:w-2/5 mx-auto pt-8" /></a>
+                        <a href="" target="_blank"><img src="./src/images/gplay.svg" class="w-1/2 lg:w-2/5 mx-auto pt-4" /></a>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row lg:flex-wrap justify-around items-center px-4 lg:px-8 py-8 2xl:px-64">
+                    <div class="flex flex-col justify-around items-center px-10 lg:px-0 py-4">
+                        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="border-4 border-white">
+                            <img src="./src/images/bojalica.jpg" class="w-128 h-auto lg:w-96 xl:w-128" />
+                        </div>
+                        <p class="uppercase text-lg text-center text-white font-ariston">bojalica</p>
+                    </div>
+                    <div class="flex flex-col justify-around items-center px-10 lg:px-0 py-4">
+                        <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="border-4 border-white w-full">
+                            <img src="./src/images/pitalica.jpg" class="w-128 lg:w-96 xl:w-128 h-auto" />
+                        </div>
+                        <p class="uppercase text-lg text-center text-white font-ariston">pitalica</p>
+                    </div>
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="flex flex-col justify-around items-center px-10 lg:px-0 py-4">
+                        <div class="border-4 border-white w-full">
+                            <img src="./src/images/memory.jpg" class="w-128 lg:w-96 xl:w-128 h-auto" />
+                        </div>
+                        <p class="uppercase text-lg text-center text-white font-ariston">pamtilica</p>
+                    </div>
+                    <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="flex flex-col justify-around items-center px-10 lg:px-0 py-4">
+                        <div class="border-4 border-white w-full">
+                            <img src="./src/images/vozilica.jpg" class="w-128 lg:w-96 xl:w-128 h-auto" />
+                        </div>
+                        <p class="uppercase text-lg text-center text-white font-ariston">vozilica</p>
+                    </div>
+                </div>
+            </div>
+            <div id="video" class="flex flex-col justify-between items-center lg:py-20 px-4 lg:px-48 xl:px-80 2xl:px-96">
+                <p class="uppercase text-center text-base text-white font-pink">pogledaj video:</p>
+                <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="relative h-0 overflow-hidden max-w-full w-full border-4 border-white mb-6" style="padding-bottom: 56.25%">
+                    <iframe src="https://www.youtube.com/embed/LA27gsOapus" frameborder="0" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe> </div>
+
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="relative h-0 overflow-hidden max-w-full w-full border-4 border-white mb-6" style="padding-bottom: 56.25%">
+                    <iframe src="https://www.youtube.com/embed/eqSmPreYyP4" frameborder="0" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe> </div>
+            </div>
+            <div class="lg:hidden">
+                <img src="./src/images/grupa.png" />
+            </div>
+            <div class="hidden lg:flex lg:flex-row lg:justify-center lg:items-center lg:bg-contain lg:bg-no-repeat lg:bg-center lg:bg-[url('./images/carousel.png')] py-28 lg:py-32 px-10 lg:px-36">
+                <a href="#oli" class="flex flex-col justify-center items-center hover:scale-125">
+                    <img src="./src/images/oli-toy.png" class="" />
+                    <img src="./src/images/oli.png" class="w-28 -mt-4" />
+                </a>
+                <a href="#bani" class="flex flex-col justify-center items-center hover:scale-125">
+                    <img src="./src/images/bani-toy.png" class="" />
+                    <img src="./src/images/bani.png" class="w-28 -mt-4" />
+                </a>
+                <a href="#fifi" class="flex flex-col justify-center items-center hover:scale-125">
+                    <img src="./src/images/fifi-toy.png" class="" />
+                    <img src="./src/images/fifi.png" class="w-28" />
+                </a>
+                <a href="#miki" class="flex flex-col justify-center items-center hover:scale-125">
+                    <img src="./src/images/miki-toy.png" class="" />
+                    <img src="./src/images/miki.png" class="w-28 -mt-8" />
+                </a>
+                <a href="#gricko" class="flex flex-col justify-center items-center hover:scale-125">
+                    <img src="./src/images/gricko-toy.png" class="" />
+                    <img src="./src/images/gricko.png" class="w-32 -mt-4" />
+                </a>
+            </div>
+            <div id="fifi">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="./src/images/fifi-novi.png" class="hidden lg:block lg:px-10" />
+                    <img src="./src/images/fifi-sm.png" class="lg:hidden pt-5" />
+                    <img src="./src/images/fifi-art.png" class="-mt-12 lg:hidden pb-4" />
+                    <div class="container px-4 lg:px-48 xl:px-80 2xl:px-96">
+                        <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="relative h-0 overflow-hidden max-w-full w-full border-4 border-white mb-6" style="padding-bottom: 56.25%">
+                            <iframe src="https://www.youtube.com/embed/4qMogDjt72o" frameborder="0" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe> </div>
+                    </div>
+                </div>
+            </div>
+            <div id="miki" class="lg:pb-32">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="./src/images/miki-novi.png" class="hidden lg:block lg:px-10" />
+                    <img src="./src/images/miki-sm.png" class="lg:hidden" />
+                    <img src="./src/images/miki-art.png" class="lg:hidden" />
+                    <div class="container px-4 lg:px-48 xl:px-80 2xl:px-96">
+                        <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="relative h-0 overflow-hidden max-w-full w-full border-4 border-white mb-6" style="padding-bottom: 56.25%">
+                            <iframe src="https://www.youtube.com/embed/kqqdFgE_WUw" frameborder="0" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe> </div>
+                    </div>
+                </div>
+            </div>
+            <div id="gricko" class="lg:pb-32">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="./src/images/gricko-novi.png" class="hidden lg:block lg:px-14" />
+                    <img src="./src/images/gricko-sm.png" class="lg:hidden" />
+                    <img src="./src/images/gricko-art.png" class="lg:hidden pb-4" />
+                    <div class="container px-4 lg:px-48 xl:px-80 2xl:px-96">
+                        <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="relative h-0 overflow-hidden max-w-full w-full border-4 border-white mb-6" style="padding-bottom: 56.25%">
+                            <iframe src="https://www.youtube.com/embed/zK2YJoyf8RY" frameborder="0" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe> </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bani" class="lg:pb-36">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="./src/images/bani-novi.png" class="hidden lg:block lg:px-14 lg:pt-6" />
+                    <img src="./src/images/bani-sm.png" class="lg:hidden pt-12" />
+                    <img src="./src/images/bani-art.png" class="lg:hidden -mt-12 pb-5" />
+                    <div class="container px-4 lg:px-48 xl:px-80 2xl:px-96">
+                        <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="relative h-0 overflow-hidden max-w-full w-full border-4 border-white mb-6" style="padding-bottom: 56.25%">
+                            <iframe src="https://www.youtube.com/embed/TrEVQgbpiJk" frameborder="0" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe> </div>
+                    </div>
+                </div>
+            </div>
+            <div id="oli" class="pb-20 lg:pb-40">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="./src/images/oli-novi.png" class="hidden lg:block lg:px-14" />
+                    <img src="./src/images/oli-sm.png" class="lg:hidden pt-4" />
+                    <img src="./src/images/oli-art.png" class="lg:hidden pb-4" />
+                    <div class="container px-4 lg:px-48 xl:px-80 2xl:px-96">
+                        <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="relative h-0 overflow-hidden max-w-full w-full border-4 border-white mb-6" style="padding-bottom: 56.25%">
+                            <iframe src="https://www.youtube.com/embed/4jFAwVU5_JY" frameborder="0" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe> </div>
+                    </div>
+                </div>
+            </div>
+            <div id="kako-do" class="lg:py-20 pt-16">
+                <div class="text-center text-white py-4 px-4 lg:px-20 flex flex-col justify-around items-center">
+                    <h1 data-aos="fade-down" data-aos-duration="500" class="text-lg leading-8 md:text-2xl uppercase pb-4 font-ariston">kako do plišanih junaka s popustom?</h1>
+                    <p data-aos="fade-down" data-aos-duration="500" class="text-base leading-8 lg:leading-10 py-4 font-pink">Za svakih potrošenih 50 kn/ 6,64 EUR u trgovinama Grupe NTL dobivaš jednu „N“ naljepnicu. </br>
+                        Naljepnice se lijepe u zaseban letak programa vijernosti. <br> Kada skupiš 20 "N" naljepnica ostvaruješ 50% popusta na kupnju jednog plišanca. </p>
+                    <p data-aos="fade-down" data-aos-duration="500" class="text-base leading-8 lg:leading-10 py-4 font-pink"> Mali savjet! <br>Potraži posebno označene proizvode na policama trgovina Grupe NTL jer svakom njihovom kupnjom dobivaš dodatnu „N“ naljepnicu.
+                    </p>
+                    <p data-aos="fade-down" data-aos-duration="500" class="text-base leading-8 lg:leading-10 py-4 font-pink">Ako si jako nestrpljiv plišane junake možeš kupiti odmah po punoj cijeni. </p>
+                    <p data-aos="fade-down" data-aos-duration="500" class="text-base leading-8 lg:leading-10 py-4 font-pink">Ponuda vrijedi do isteka zaliha.</p>
+                </div>
+                <div class="flex flex-row justify-around items-center xl:px-16">
+                    <img data-aos="fade-left" data-aos-duration="500" src="./src/images/asset1.svg" class="w-40 lg:w-96 h-auto xl:w-1/3" />
+                    <div class="border-l-0 border-r-0 border-b-0 border-t-4 border-white border-dotted h-0 w-20 md:w-56 lg:w-28"></div>
+                    <img data-aos="fade-right" data-aos-duration="500" src="./src/images/asset2.svg" class="w-40 lg:w-96 h-auto xl:w-1/3" />
+                </div>
+                <div class="flex flex-col justify-around items-center py-8">
+                    <a href="./src/files/NTL-Letak.pdf" download="NTL-letak">
+                        <button class="border border-gray-light shadow-lg shadow-dark-shadow rounded-full bg-white text-center text-base uppercase py-4 px-12 pr-8 font-pink">preuzmi letak</button>
+                    </a>
+                    <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" src="./src/images/upute.png" class="pt-10 w-4/5 lg:w-3/5" />
+                </div>
+            </div>
+        </section>
+        <section class="bg-red">
+            <img src="./src/images/svi.png" class="hidden lg:block lg:w-full" />
+            <img src="./src/images/bottom-sm.png" class="lg:hidden w-full" />
+        </section>
+        <section class=" bg-red lg:bg-contain xl:bg-cover lg:bg-no-repeat  lg:bg-[url('./images/proizvodi-bot.png')] -mt-2 py-24  xl:pb-36 2xl:pb-96 bg-center relative xl:px-12">
+            <div class="absolute px-10 md:px-0 top-4 left-4 md:left-32 lg:top-1 xl:top-4 md:w-2/3  lg:left-44 2xl:left-96 2xl:top-14">
+                <h1 data-aos="fade-down" data-aos-duration="500" class="text-white text-center text-base xl:text-special 2xl:text-2xl font-gardenia">Kupnjom navedenih proizvoda u razdoblju 08.09. - 21.09.2022. dobivaš dodatnu „N“ naljepnicu.</h1>
+            </div>
+            <div class="relative w-[380px] md:w-[480px] 2xl:w-[680px] mx-auto" style="padding-top: 12rem;">
+                <div class="slide relative">
+                    <img class="w-3/4 mx-auto" src="./src/images/podravka.png">
+                </div>
+
+                <div class="slide relative">
+                    <img class="w-3/4 mx-auto" src="./src/images/jogurt.png">
+                </div>
+
+                <div class="slide relative">
+                    <img class="w-3/4 mx-auto" src="./src/images/brasno.png">
+                </div>
+                <div class="slide relative">
+                    <img class="w-3/4 mx-auto" src="./src/images/hrusk.png">
+                </div>
+
+                <div class="slide relative">
+                    <img class="w-3/4 mx-auto" src="./src/images/pombar.png">
+                </div>
+
+                <div class="slide relative">
+                    <img class="w-3/4 mx-auto" src="./src/images/linolada.png">
+                </div>
+                <div class="slide relative">
+                    <img class="w-3/4 mx-auto" src="./src/images/sladoled.png">
+                </div>
+
+                <div class="slide relative">
+                    <img class="w-3/4 mx-auto" src="./src/images/voda.png">
+                </div>
+                <div class="slide relative">
+                    <img class="w-3/4 mx-auto" src="./src/images/domestos.png">
+                </div>
+
+                <!-- The previous button -->
+                <a class="absolute left-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer" onclick="moveSlide(-1)">❮</a>
+
+                <!-- The next button -->
+                <a class="absolute right-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer" onclick="moveSlide(1)">❯</a>
+
+            </div>
+
+            <!-- The dots -->
+            <div class="flex justify-center items-center space-x-5 pt-5">
+                <div class="dot w-4 h-4 rounded-full cursor-pointer bg-white" onclick="currentSlide(1)"></div>
+                <div class="dot w-4 h-4 rounded-full cursor-pointer bg-white" onclick="currentSlide(2)"></div>
+                <div class="dot w-4 h-4 rounded-full cursor-pointer bg-white" onclick="currentSlide(3)"></div>
+                <div class="dot w-4 h-4 rounded-full cursor-pointer bg-white" onclick="currentSlide(4)"></div>
+                <div class="dot w-4 h-4 rounded-full cursor-pointer bg-white" onclick="currentSlide(5)"></div>
+                <div class="dot w-4 h-4 rounded-full cursor-pointer bg-white" onclick="currentSlide(6)"></div>
+                <div class="dot w-4 h-4 rounded-full cursor-pointer bg-white" onclick="currentSlide(7)"></div>
+                <div class="dot w-4 h-4 rounded-full cursor-pointer bg-white" onclick="currentSlide(8)"></div>
+                <div class="dot w-4 h-4 rounded-full cursor-pointer bg-white" onclick="currentSlide(9)"></div>
+            </div>
+
+        </section>
+        <!-- FOOTER -->
+        <footer class="bg-red md:pt-40 px-4 pb-4 lg:py-8 lg:px-36">
+
+            <div class="flex flex-col justify-between items-center md:flex-row">
+                <div class="flex flex-col justify-between items-center">
+                    <a href="https://ntl.hr/" target="_blank"><img src="./src/images/ntl-logo.svg" /></a>
+                    <p class="text-white text-sm text-center font-pink">Copyright NTL 2022.</p>
+                </div>
+                <a class=" text-white text-base text-center no-underline font-ariston" href="https://ntl.hr/" target="_blank">www.ntl.hr</a>
+
+                <div class="hidden lg:flex lg:flex-row lg:justify-between lg:items-center">
+                    <p class="text-white text-sm text-center w-44 px-4 font-pink">Skeniraj QR kod, preuzmi N-TELE aplikaciju i zaigraj zanimljive igre s našim junacima!</p>
+                    <img src="./src/images/qr.svg" class="w-32 h-auto" />
+                </div>
+            </div>
+
+
+        </footer>
+
+
+
+
+
+
+        <!--     <section id="gradski-prijatelji" class="bg-red px-10 py-8">
+            <h1 class="uppercase text-white text-center text-2xl py-8 px-10 font-ariston lg:px-32" data-aos="fade-down" data-aos-duration="500">upoznaj gradske prijatelje na ntele farmi</h1>
+            <div class="flex flex-col justify-between items-center py-8 px-4 lg:px-48 xl:px-80 2xl:px-96">
+                <p class="uppercase text-center text-base text-white font-pink">pogledaj video:</p>
+                <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="relative h-0 overflow-hidden max-w-full w-full border-4 border-white mb-6" style="padding-bottom: 56.25%">
+                    <iframe src="https://www.youtube-nocookie.com/embed/rXH2nlewl6A" frameborder="0" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe> </div>
+
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="relative h-0 overflow-hidden max-w-full w-full border-4 border-white mb-6" style="padding-bottom: 56.25%">
+                    <iframe src="https://www.youtube-nocookie.com/embed/rXH2nlewl6A" frameborder="0" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe> </div>
+
+            </div>
+        </section>
+
+        <section >
+
+        </section>
+
+        <section id="igre" class="bg-red px-8">
+
+        </section>
+        <section id="fifi" class="bg-red px-8 pt-14 lg:px-20 lg:pt-36">
+
+        </section>
+        <section id="miki" class="bg-red px-8 pt-14 lg:px-20 lg:pt-28">
+
+        </section>
+        <section id="gricko" class="bg-red px-8 pt-14 lg:px-20 lg:pt-36">
+
+        </section>
+        <section id="bani" class="bg-red px-8 pt-14 lg:px-20 lg:pt-36">
+
+        </section>
+        <section id="oli" class="bg-red px-8 pt-14 lg:px-20 lg:pt-36">
+
+        </section>
+
+        <section id="kako-do" class="bg-red py-20 px-8 lg:px-10 xl:px-16">
+
+        </section>
+        <section class="bg-red">
+
+        </section> -->
+
+    </div>
+</body>
+<script>
+    // set the default active slide to the first one
+    let slideIndex = 1;
+    showSlide(slideIndex);
+
+    // change slide with the prev/next button
+    function moveSlide(moveStep) {
+        showSlide(slideIndex += moveStep);
+    }
+
+    // change slide with the dots
+    function currentSlide(n) {
+        showSlide(slideIndex = n);
+    }
+
+    function showSlide(n) {
+        let i;
+        const slides = document.getElementsByClassName("slide");
+        const dots = document.getElementsByClassName('dot');
+
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+
+        // hide all slides
+        for (i = 0; i < slides.length; i++) {
+            slides[i].classList.add('hidden');
+        }
+
+        // remove active status from all dots
+        for (i = 0; i < dots.length; i++) {
+            dots[i].classList.remove('bg-yellow-500');
+            dots[i].classList.add('bg-green-600');
+        }
+
+        // show the active slide
+        slides[slideIndex - 1].classList.remove('hidden');
+
+        // highlight the active dot
+        dots[slideIndex - 1].classList.remove('bg-green-600');
+        dots[slideIndex - 1].classList.add('bg-yellow-500');
+    }
+</script>
+<script>
+    var mobileMenuButton = document.getElementById("mobileMenuButton");
+    mobileMenuButton.onclick = function() {
+        document.getElementById("sideMenuHideOnMobile").classList.toggle("-translate-y-full");
+        document.getElementById("sideMenuHideOnMobile").classList.toggle("mt-24");
+        document.getElementById("sideMenuHideOnMobile").classList.toggle("shadow");
+        document.getElementById("mobileMenuButtonClose").classList.toggle("hidden");
+        document.getElementById("mobileMenuButtonOpen").classList.toggle("hidden");
+    }
+
+    var theElementContainer = document.getElementsByTagName("nav")[0];
+    document.addEventListener('click', function(event) {
+        if (!theElementContainer.contains(event.target)) {
+            document.getElementById("sideMenuHideOnMobile").classList.add("-translate-y-full");
+            document.getElementById("sideMenuHideOnMobile").classList.remove("mt-24");
+            document.getElementById("sideMenuHideOnMobile").classList.remove("shadow");
+            document.getElementById("mobileMenuButtonOpen").classList.remove("hidden");
+            document.getElementById("mobileMenuButtonClose").classList.add("hidden");
+        }
+    });
+
+    var menuLinks = document.querySelectorAll("a.navlink");
+    menuLinks.forEach((e, i) => {
+        e.addEventListener('click', () => {
+            document.getElementById("sideMenuHideOnMobile").classList.add("-translate-y-full");
+            document.getElementById("sideMenuHideOnMobile").classList.remove("mt-24");
+            document.getElementById("sideMenuHideOnMobile").classList.remove("shadow");
+            document.getElementById("mobileMenuButtonOpen").classList.remove("hidden");
+            document.getElementById("mobileMenuButtonClose").classList.add("hidden");
+        });
+    });
+</script>
+
+
+
+<script>
+    AOS.init();
+</script>
+
+</html>
